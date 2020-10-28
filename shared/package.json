@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "copy-sass": "call robocopy src dist *.scss /E",
+    "copy-sass": "(robocopy src dist *.scss /E) ^& IF %ERROR_LEVEL% LEQ 1 exit 0",
     "build-ts": "tsc",
     "build": "npm run copy-sass && npm run build-ts",
     "test": "echo \"Error: no test specified\" && exit 1"

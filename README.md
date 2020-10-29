@@ -26,7 +26,8 @@ npm i --save react-dom
         "declaration": true,
         "outDir": "./dist/",
         "esModuleInterop": true,
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "rootDir": "./src"
     },
     "include": [
         "src/**/*"
@@ -67,7 +68,7 @@ npm i ../../shared
 
 ## Typescript
 ```typescript
-import BlueButton from "shared/dist/BlueButton";
+import BlueButton from "shared/dist/components/BlueButton";
 ```
 
 ## SASS

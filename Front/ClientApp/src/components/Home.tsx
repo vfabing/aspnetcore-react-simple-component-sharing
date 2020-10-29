@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import BlueButton from "shared/dist/BlueButton";
+import BlueButton from "shared/dist/components/BlueButton";
 
 export class Home extends Component {
   static displayName = Home.name;
